@@ -24,7 +24,7 @@ pipeline {
           sh "git checkout master"
           sshagent(credentials: [githubSsh])
           {
-            sh "git push ${githubUrl} HEAD:main"
+            sh "git push --force ${githubUrl} HEAD:main"
           }
         }
       }
