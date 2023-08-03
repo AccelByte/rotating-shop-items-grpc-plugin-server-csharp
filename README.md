@@ -291,7 +291,7 @@ in local development environment to the internet so that it can be called by
 After passing integration test against locally running sample app you may want to deploy the sample app to AGS (AccelByte Gaming Services).
 
 1. Download and setup [extend-helper-cli](https://github.com/AccelByte/extend-helper-cli/)
-2. Create new Extend App on Admin Portal, please refer to docs [here](https://docs-preview.accelbyte.io/gaming-services/services/customization/getting-started-rotating-shop-items/)
+2. Create new Extend App on Admin Portal, please refer to docs [here](https://docs.accelbyte.io/gaming-services/services/customization/override-ags-feature/getting-started-with-rotating-shop-items-customization/)
 3. Do docker login using `extend-helper-cli`, please refer to its documentation
 4. Build and push sample app docker image to AccelByte ECR using the following command inside sample app directory
    ```
@@ -299,4 +299,4 @@ After passing integration test against locally running sample app you may want t
    ```
    > Note: the REPO_URL is obtained from step 2 in the app detail on the 'Repository Url' field
 
-Please refer to [getting started docs](https://docs-preview.accelbyte.io/gaming-services/services/customization/getting-started-rotating-shop-items/) for more detailed steps on how to deploy sample app to AccelByte Gaming Service.
+Please refer to [getting started docs](https://docs.accelbyte.io/gaming-services/services/customization/override-ags-feature/getting-started-with-rotating-shop-items-customization/) for more detailed steps on how to deploy sample app to AccelByte Gaming Service.
