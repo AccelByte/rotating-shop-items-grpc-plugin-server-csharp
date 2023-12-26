@@ -83,7 +83,7 @@ namespace AccelByte.PluginArch.ItemRotation.Demo.Client.Model
             RunMode = ReplaceWithEnvironmentVariableIfExists(RunMode, "AB_RUN_MODE");
 
             if (CategoryPath.Trim() == "")
-                CategoryPath = $"/testcat-{Helper.GenerateRandomId(8)}";
+                CategoryPath = $"/test{Helper.GenerateRandomId(8)}";
         }
     }
 }

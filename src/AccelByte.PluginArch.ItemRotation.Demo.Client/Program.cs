@@ -49,6 +49,10 @@ namespace AccelByte.PluginArch.ItemRotation.Demo.Client
                         Console.WriteLine("[OK]");
                         try
                         {
+                            Console.Write("Check Currency... ");
+                            wrapper.CheckAndCreateCurrencyIfNotExists();
+                            Console.WriteLine("[OK]");
+
                             Console.Write("Creating draft store... ");
                             wrapper.CreateStore();
                             Console.WriteLine("[OK]");
