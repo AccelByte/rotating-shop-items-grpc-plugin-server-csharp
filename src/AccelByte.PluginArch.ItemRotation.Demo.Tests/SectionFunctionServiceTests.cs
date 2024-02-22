@@ -102,7 +102,7 @@ namespace AccelByte.PluginArch.ItemRotation.Demo.Tests
             {
                 if (item.Index == randomOwnedIndex)
                 {
-                    Assert.AreNotEqual(request.Items[randomOwnedIndex].ItemId, item.ItemId);
+                    Assert.AreNotEqual(request.Items[randomOwnedIndex - 1].ItemId, item.ItemId);
                     isFound = true;
                     break;
                 }   
