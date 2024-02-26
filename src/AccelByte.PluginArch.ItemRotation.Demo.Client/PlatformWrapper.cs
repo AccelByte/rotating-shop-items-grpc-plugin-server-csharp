@@ -265,9 +265,9 @@ namespace AccelByte.PluginArch.ItemRotation.Demo.Client
                                 { "US", new List<RegionDataItemDTO>()
                                     {
                                         { new RegionDataItemDTO() {
-                                            CurrencyCode = "USD",
+                                            CurrencyCode = "USV",
                                             CurrencyNamespace = _Sdk.Namespace,
-                                            CurrencyType = RegionDataItemDTOCurrencyType.REAL,
+                                            CurrencyType = RegionDataItemDTOCurrencyType.VIRTUAL,
                                             Price = (i + 1) * 2
                                         }}
                                     }
@@ -548,28 +548,28 @@ namespace AccelByte.PluginArch.ItemRotation.Demo.Client
                 if (currencies == null)
                     throw new Exception("Could not retrieve list of currencies.");
 
-                bool isUSDFound = false;
+                bool isCurrencyFound = false;
                 foreach (var currencyItem in currencies)
                 {
-                    if (currencyItem.CurrencyCode == "USD")
+                    if (currencyItem.CurrencyCode == "USV")
                     {
-                        isUSDFound = true;
+                        isCurrencyFound = true;
                         break;
                     }
                 }
 
-                if (!isUSDFound)
+                if (!isCurrencyFound)
                 {
                     _Sdk.Platform.Currency.CreateCurrencyOp
                         .SetBody(new CurrencyCreate()
                         {
-                            CurrencyCode = "USD",
-                            CurrencySymbol = "US$",
-                            CurrencyType = CurrencyCreateCurrencyType.REAL,
-                            Decimals = 2,
+                            CurrencyCode = "USV",
+                            CurrencySymbol = "USV",
+                            CurrencyType = CurrencyCreateCurrencyType.VIRTUAL,
+                            Decimals = 0,
                             LocalizationDescriptions = new Dictionary<string, string>()
                             {
-                                { "en", "US Dollars" }
+                                { "en", "Virtual US Dollars" }
                             }
                         })
                         .Execute(_Sdk.Namespace);
