@@ -6,7 +6,7 @@ SHELL := /bin/bash
 
 BUILDER := grpc-plugin-server-builder
 IMAGE_NAME := $(shell basename "$$(pwd)")-app
-DOTNETVER := 6.0.302
+DOTNETVER := 6.0
 BUILDER := grpc-plugin-server-builder
 APP_PATH := AccelByte.PluginArch.ItemRotation.Demo.Server
 
