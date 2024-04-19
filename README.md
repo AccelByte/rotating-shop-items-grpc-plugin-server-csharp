@@ -82,7 +82,6 @@ For more options, create `src/AccelByte.PluginArch.ItemRotation.Demo.Server/apps
 
 ```json
 {
-  "DirectLogToLoki": false,
   "EnableAuthorization": true,                 // Enable or disable access token and permission check (env var: PLUGIN_GRPC_SERVER_AUTH_ENABLED)
   "RevocationListRefreshPeriod": 60,
   "AccelByte": {
