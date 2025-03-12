@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccelByte.PluginArch.ItemRo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccelByte.PluginArch.ItemRotation.Demo.Tests", "AccelByte.PluginArch.ItemRotation.Demo.Tests\AccelByte.PluginArch.ItemRotation.Demo.Tests.csproj", "{A615A4DB-FC16-4924-959B-86C029F83E7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccelByte.PluginArch.ItemRotation.Demo.Client", "AccelByte.PluginArch.ItemRotation.Demo.Client\AccelByte.PluginArch.ItemRotation.Demo.Client.csproj", "{AA23408A-02FF-4A67-8813-F5BB4A91131F}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
