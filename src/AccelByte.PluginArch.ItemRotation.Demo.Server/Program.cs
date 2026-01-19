@@ -32,7 +32,7 @@ namespace AccelByte.PluginArch.ItemRotation.Demo.Server
             if (appServiceName == null)
                 appServiceName = "extend-app-item-rotation";
             else
-                appServiceName = $"extend-app-{appServiceName.Trim().ToLower()}";
+                appServiceName = $"extend-app-rt-{appServiceName.Trim().ToLower()}";
 
             Metrics.DefaultRegistry.SetStaticLabels(new Dictionary<string, string>()
             {

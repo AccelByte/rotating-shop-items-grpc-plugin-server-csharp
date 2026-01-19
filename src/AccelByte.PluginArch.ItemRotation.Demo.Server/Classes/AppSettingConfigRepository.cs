@@ -56,7 +56,7 @@ namespace AccelByte.PluginArch.ItemRotation.Demo.Server
             if (appServiceName == null)
                 ServiceName = "extend-app-item-rotation";
             else
-                ServiceName = $"extend-app-{appServiceName.Trim().ToLower()}";
+                ServiceName = $"extend-app-rt-{appServiceName.Trim().ToLower()}";
 
             string? appResourceName = Environment.GetEnvironmentVariable("APP_RESOURCE_NAME");
             if (appResourceName == null)
